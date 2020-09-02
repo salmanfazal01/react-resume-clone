@@ -6,6 +6,7 @@ import resume from "./utils/resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Col, Row } from "react-bootstrap";
 import Resume from "./pages/resume/Resume";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Profile {...resume} />
         </Col>
         <div className="col-lg-9 col-md-8 tab-container">
+          <Header/>
           <div className="content">
             <Resume {...resume} />
           </div>

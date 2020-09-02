@@ -1,8 +1,14 @@
 import React from "react";
 import {
   InfoOutlined,
-  WebOutlined,
   AssignmentOutlined,
+  WorkRounded,
+  Facebook,
+  Twitter,
+  LinkedIn,
+  GitHub,
+  Telegram,
+  WebOutlined
 } from "@material-ui/icons";
 
 export default {
@@ -11,9 +17,30 @@ export default {
   displayImage: "displayImage.jpg",
   birthday: "01st August 1996",
   email: "salmanfazal01@gmail.com",
+  address: "Toronto, ON",
+  phone: "232 232 2323",
 
   socials: {
-    linkedIn: "https://www.linkedin.com/",
+    Facebook: {
+      link: "https://www.facebook.com/",
+      text: "SalmanFazal01",
+      icon: <Facebook />,
+    },
+    Twitter: {
+      link: "https://www.twitter.com/",
+      text: "SamsFXJournal",
+      icon: <Twitter />,
+    },
+    linkedIn: {
+      link: "https://www.linkedin.com/",
+      text: "SamFaz",
+      icon: <LinkedIn />,
+    },
+    Github: {
+      link: "https://www.github.com/",
+      text: "Salmanfazal01",
+      icon: <GitHub />,
+    },
   },
 
   about:
@@ -80,11 +107,30 @@ export default {
       description: "I have been working on web design for 10 years.",
       icon: <WebOutlined />,
     },
+  ],
+
+  skills: [
     {
-      title: "Branding Identity",
-      description:
-        "We will make you a brand that is catchy and leaves a trace.",
-      icon: <AssignmentOutlined />,
+      title: "FRONT-END",
+      description: [
+        "ReactJS",
+        "JavaScript",
+        "TypeScript",
+        "Bootstrap",
+        "Material UI",
+      ],
+    },
+    {
+      title: "BACK-END",
+      description: ["NodeJS", "Java", "Python", "Solidity"],
+    },
+    {
+      title: "DATABASES",
+      description: ["Firebase", "Ms SQL Server", "MySQL", "MongoDB"],
+    },
+    {
+      title: "SOURCE CONTROL",
+      description: ["Git", "GitHub", "SCRUM/Agile"],
     },
   ],
 };

@@ -68,24 +68,24 @@
 /*END TIMELINE*/
 
 /*SERVICES*/
+
 .service {
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
-    min-height: 186px;
-    margin-bottom: 30px;
+    height: 100%;
+    text-align: center;
 }
 
-.service_title {
-    font-size: 14px !important;
+.service .service_title {
+    font-size: 16px !important;
     font-weight: 500 !important;
     line-height: 35px !important;
+    text-align: center;
 }
 
-.service_description {
+.service .service_description {
     color: #989898 !important;
-    font-weight: 400 !important;
-    line-height: 18px !important;
+    border-color: var(--main-color) !important;
+    margin-right: 5px !important;
+    text-align: center;
 }
 
 .service_icon > .MuiSvgIcon-root {
@@ -96,3 +96,62 @@
 }
 
 /*END SERVICES*/
+
+/*SKILLS*/
+.skills {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    min-height: 186px;
+    height: 100%;
+}
+
+.skills_title {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+}
+
+.skills_description {
+    display: flex;
+    align-items: center;
+    color: #989898 !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+}
+
+.skills_description .timeline_dot {
+    color: black !important;
+    border-color: var(--main-color) !important;
+    padding: 2px !important;
+    margin-right: 5px !important;
+
+}
+
+/*END SKILLS*/
+
+
+/*CONTACT*/
+
+.contactInfo_item {
+    line-height: 34px !important;
+    font-size: 14px !important;
+    color: #787878;
+}
+
+.contactInfo_item > span {
+    color: black;
+    font-weight: 500;
+}
+
+.contactInfo_socialsContainer {
+    margin-top: 15px;
+}
+
+.contactInfo_social > a > .MuiSvgIcon-root {
+    font-size: 16px !important;
+    margin-right: 10px;
+    color: black;
+}
+
+/*END CONTACT*/
